@@ -7,7 +7,7 @@
 class Penterep < Formula
   desc "AI-powered penetration testing CLI assistant"
   homepage "https://github.com/Penterep/penterep-cli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
