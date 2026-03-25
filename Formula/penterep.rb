@@ -13,20 +13,20 @@ class Penterep < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Penterep/penterep-cli/releases/download/v#{version}/penterep-darwin-arm64"
-      sha256 "0c69af4d748a9ceddf5f3355c1eac579eb720939fd3a8ec6077097f82b207308"
+      sha256 "e6a89df11631bfe2f265d7bc4f5a2df114a680031251d2b966327d791bbfe75a"
     else
       url "https://github.com/Penterep/penterep-cli/releases/download/v#{version}/penterep-darwin-x64"
-      sha256 "3a4d202052166de7d5c3ae0a83a0c89c1d98d5a892fa13e6efccbe243d15906e"
+      sha256 "0fda4377d03794595f6e4810ea63ac8bdc30e52fbf20a756f77a2ef025e08d60"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Penterep/penterep-cli/releases/download/v#{version}/penterep-linux-arm64"
-      sha256 "02cc985953a307b8029ddbcdaf91a21f92be5e215e8124a0d446e6caa387487f"
+      sha256 "54bd0a7cf4d9056c4d7cf2fd2d48c33526d0e841e1bedf8e8acc1f98f6fed1c7"
     else
       url "https://github.com/Penterep/penterep-cli/releases/download/v#{version}/penterep-linux-x64"
-      sha256 "7487167ce790a6343547e5cf3d1749fa5415f0b1f4a46ea88e6b56ca75c0f7df"
+      sha256 "91dd66abe9907060802e1b8e116a9ec26a6cb04451a343fd5171c3268fa770c4"
     end
   end
 
