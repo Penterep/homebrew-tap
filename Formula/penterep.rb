@@ -7,32 +7,32 @@
 class Penterep < Formula
   desc "AI-powered penetration testing CLI assistant"
   homepage "https://github.com/Penterep/penterep-cli"
-  version "0.1.19"
+  version "0.1.20"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/penterep/cli/releases/download/v#{version}/penterep-darwin-arm64"
-      sha256 "8e8fd18a9cf40f2863c6a91de9769afd68ffb8562a25c4373e6078907bf8a258"
+      sha256 "cfab5e3ca44fd5e2500fcfca444e96804508d4d26cbb0167c5e25e6266127ef7"
     else
       url "https://github.com/penterep/cli/releases/download/v#{version}/penterep-darwin-x64"
-      sha256 "a0376f6bfa46d26fed15ffab3b4868babe7b35157dcdadff50d217f09215fec0"
+      sha256 "3d34a6047a034a1b64f1928c8dd40f064e8093d18845cb294053576fcfbd7d7f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/penterep/cli/releases/download/v#{version}/penterep-linux-arm64"
-      sha256 "9f64099b87b2de467468caa7e5111b58282b10d61051f6daf324b21099d77742"
+      sha256 "6e3ac75361b62a33072ef65e2adcb4a5136ff32b231fa0b739f01eb4a7d3efd5"
     else
       url "https://github.com/penterep/cli/releases/download/v#{version}/penterep-linux-x64"
-      sha256 "e19608513f222c2f91b9d52ee03d9a78bcd96eb9662311c3ac6dbea8ee5a15e9"
+      sha256 "ef4f3084ddbbcd9ed16194b81d8ce1a4b2eb81ec86f2dfe4ed1cb240a48b9f10"
     end
   end
 
   resource "assets" do
     url "https://github.com/penterep/cli/releases/download/v#{version}/penterep-assets.tar.gz"
-    sha256 "8b31139a3070f35d45cb9fdaeff2cc5f412147987016f585bbae06182d4decb9"
+    sha256 "326143701a93ddf6f056ea65acdda45aad346b5f36ed2a232381e171de440d81"
   end
 
   def install
